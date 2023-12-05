@@ -24,16 +24,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Providers >
+      {/* <Providers > */}
 
       <body className={inter.className}>
         <main className="max-w-10xl mx-auto">
           <Navbar />
-          <Chat />
+          {/* <Chat /> */}
           {children}
         </main>
       </body>
-      </Providers>
+      {/* </Providers> */}
     </html>
   )
 }
