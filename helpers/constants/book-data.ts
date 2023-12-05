@@ -1,23 +1,23 @@
-import { getAllProducts } from "@/lib/actions"
+// import { getAllProducts } from "@/lib/actions"
 
 
-const allProducts = await () => {
+// const allProducts = await() => {
 
-    const products = await getAllProducts();
+//     const products = await getAllProducts();
 
-    products?.map((product) => {
-        return `
-        ${product.title}
-        ${product.description}
-        ${product.price}
-        ${product.availability}
-        `
-    }
-}
+//     products?.map((product) => {
+//         return `
+//         ${product.title}
+//         ${product.description}
+//         ${product.price}
+//         ${product.availability}
+//         `
+//     }
+// }
 
 export const bookData = `
 <url>
-<loc>${product.title}</loc>
+<loc>{product.title}</loc>
 <loc>https://www.amazon.in/</loc>
 <desc>Amazon Products info</desc>
 </url>
