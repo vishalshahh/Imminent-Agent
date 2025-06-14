@@ -8,12 +8,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
-type Props = {
+interface PageProps {
   params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
-};
+}
 
-const ProductDetails = async ({ params }: Props) => {
+const ProductDetails = async ({ params }: PageProps) => {
   const { id } = params;
   const product: Product = await getProductById(id);
 
